@@ -11,14 +11,10 @@ public:
             }
         }
         for(int k=0;k<n;k++) {
-            int i=0;
-            int j=n-1;
-            while(i<=j) {
+            for(int i=0,j=n-1;i<=j;i++,j--) {
                 int temp = matrix[k][i];
                 matrix[k][i] = matrix[k][j];
                 matrix[k][j] = temp;
-                i++;
-                j--;
             }
         }
     }
